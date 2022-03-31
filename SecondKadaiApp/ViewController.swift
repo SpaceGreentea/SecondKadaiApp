@@ -14,6 +14,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        textField.placeholder = "お名前を入力してください。"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
