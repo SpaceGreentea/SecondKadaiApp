@@ -17,18 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2K-13-iFO">
-                                <rect key="frame" x="111.5" y="186" width="191" height="21"/>
+                                <rect key="frame" x="111.5" y="144" width="191" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98Z-Ph-kit">
-                                <rect key="frame" x="107" y="279" width="200" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="98Z-Ph-kit">
+                                <rect key="frame" x="112" y="265" width="190" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="P39-dU-PuR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGr-vV-dpJ">
-                                <rect key="frame" x="132" y="432" width="150" height="32"/>
+                                <rect key="frame" x="145" y="399" width="124" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="名前を表示する"/>
                                 <connections>
@@ -39,18 +42,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="98Z-Ph-kit" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="4n0-6z-VCx"/>
-                            <constraint firstItem="zGr-vV-dpJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zW-y8-ZWW"/>
-                            <constraint firstItem="v2K-13-iFO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="DPo-gY-XMI"/>
-                            <constraint firstItem="v2K-13-iFO" firstAttribute="centerX" secondItem="98Z-Ph-kit" secondAttribute="centerX" id="ErP-PT-Swi"/>
-                            <constraint firstItem="98Z-Ph-kit" firstAttribute="centerX" secondItem="zGr-vV-dpJ" secondAttribute="centerX" id="Evq-6H-cJw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zGr-vV-dpJ" secondAttribute="bottom" constant="398" id="HTy-y3-lmW"/>
-                            <constraint firstItem="zGr-vV-dpJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YB9-nu-O3l"/>
-                            <constraint firstItem="98Z-Ph-kit" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eBL-FG-vSu"/>
-                            <constraint firstItem="v2K-13-iFO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eyl-Mm-TXa"/>
-                            <constraint firstItem="zGr-vV-dpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="jbT-HH-Bkp"/>
-                            <constraint firstItem="v2K-13-iFO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phF-8W-hLm"/>
-                            <constraint firstItem="98Z-Ph-kit" firstAttribute="top" secondItem="v2K-13-iFO" secondAttribute="bottom" constant="72" id="qJx-7x-kBU"/>
+                            <constraint firstItem="v2K-13-iFO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A4u-Dv-Qhv"/>
+                            <constraint firstItem="zGr-vV-dpJ" firstAttribute="top" secondItem="98Z-Ph-kit" secondAttribute="bottom" constant="100" id="DA1-hr-y5c"/>
+                            <constraint firstItem="98Z-Ph-kit" firstAttribute="top" secondItem="v2K-13-iFO" secondAttribute="bottom" constant="100" id="MrJ-E1-vOo"/>
+                            <constraint firstItem="zGr-vV-dpJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dob-tQ-bS5"/>
+                            <constraint firstItem="98Z-Ph-kit" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rFe-SJ-b6F"/>
+                            <constraint firstItem="v2K-13-iFO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="zia-EQ-A30"/>
                         </constraints>
                     </view>
                     <connections>
@@ -70,7 +67,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWE-Su-aIt">
-                                <rect key="frame" x="180.5" y="405" width="53" height="32"/>
+                                <rect key="frame" x="180.5" y="221" width="53" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                 <connections>
@@ -78,7 +75,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20I-Ob-BIY">
-                                <rect key="frame" x="167" y="141" width="80" height="21"/>
+                                <rect key="frame" x="186.5" y="100" width="41.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -87,14 +84,10 @@
                         <viewLayoutGuide key="safeArea" id="8n0-yF-ZWw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="20I-Ob-BIY" firstAttribute="centerX" secondItem="GWE-Su-aIt" secondAttribute="centerX" id="Fnn-ij-ULc"/>
-                            <constraint firstItem="GWE-Su-aIt" firstAttribute="centerX" secondItem="BGR-jX-Aj0" secondAttribute="centerX" id="HjK-pT-k1z"/>
-                            <constraint firstItem="20I-Ob-BIY" firstAttribute="centerX" secondItem="BGR-jX-Aj0" secondAttribute="centerX" id="bCf-Ir-ItA"/>
-                            <constraint firstItem="8n0-yF-ZWw" firstAttribute="bottom" secondItem="GWE-Su-aIt" secondAttribute="bottom" constant="371" id="hIU-ae-Wyd"/>
-                            <constraint firstItem="20I-Ob-BIY" firstAttribute="top" secondItem="8n0-yF-ZWw" secondAttribute="top" constant="141" id="hSF-Ge-F8j"/>
-                            <constraint firstItem="20I-Ob-BIY" firstAttribute="leading" secondItem="8n0-yF-ZWw" secondAttribute="leading" constant="167" id="kS0-J2-W16"/>
-                            <constraint firstItem="GWE-Su-aIt" firstAttribute="centerY" secondItem="BGR-jX-Aj0" secondAttribute="centerY" id="kaM-Jb-DZp"/>
-                            <constraint firstItem="20I-Ob-BIY" firstAttribute="centerX" secondItem="BGR-jX-Aj0" secondAttribute="centerX" id="yIf-l8-Fog"/>
+                            <constraint firstItem="GWE-Su-aIt" firstAttribute="centerX" secondItem="BGR-jX-Aj0" secondAttribute="centerX" id="5Wq-nm-cvx"/>
+                            <constraint firstItem="GWE-Su-aIt" firstAttribute="top" secondItem="20I-Ob-BIY" secondAttribute="bottom" constant="100" id="jas-Fe-89N"/>
+                            <constraint firstItem="20I-Ob-BIY" firstAttribute="top" secondItem="8n0-yF-ZWw" secondAttribute="top" constant="100" id="rgt-JK-nuj"/>
+                            <constraint firstItem="20I-Ob-BIY" firstAttribute="centerX" secondItem="BGR-jX-Aj0" secondAttribute="centerX" id="zjg-Jz-DnV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sD1-sI-Eh7"/>
