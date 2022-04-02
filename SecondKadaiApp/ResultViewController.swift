@@ -19,7 +19,11 @@ class ResultViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         let result = name
-        label.text = "こんにちは、\(result)さん"
+        label.text = "こんにちは、\n\(result)\nさん"
+        
+        label.numberOfLines = 0
+        
+        label.lineBreakMode = .byWordWrapping
     }
     
 
